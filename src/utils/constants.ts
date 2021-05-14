@@ -1,4 +1,3 @@
-export const PANCAKE_ROUTER = "0x05ff2b0db69458a0750badebc4f9e13add608c7f";
 export const BNB = "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c";
 export const BUSD = "0xe9e7cea3dedca5984780bafc599bd69add087d56";
 export const USDT = "0x55d398326f99059ff775485246999027b3197955";
@@ -9,8 +8,8 @@ export const mebBUSD = "0x7e0c621ea9f7afd5b86a50b0942eaee68b04a61c";
 export const mebBNB = "0x639f18c72b6a017bdd209c161d1617c9481a1e4d";
 export const masterChefPresets = [
   {
-    name: "-",
-    address: "",
+    name: "PantherSwap",
+    address: "0x058451c62b96c594ad984370eda8b6fd7197bbd4",
   },
   {
     name: "PancakeSwap",
@@ -69,33 +68,18 @@ export const masterChefPresets = [
     address: "0xEf6e807fD2c0Ef5883A03Ed1b962333E8C9b725f",
   },
   {
-    name: "UFO",
-    address: "0x95d9a00087f0db9e72b4014017842336480a153b",
+    name: "Cheesecake",
+    address: "0x398d648c58ccf6337dded3dac7cbd7970ae474b8",
   },
   {
-    name: "TACO",
-    address: "0x36f44a1C8e973739D0034FF1B9B9f6c4c7085625",
-  },
-  {
-    name: 'Cheesecake',
-    address: "0x398d648c58ccf6337dded3dac7cbd7970ae474b8"
-  },
-  {
-    name: 'Blue',
-    address: "0xb04381026F5D4AAf0487aC4336F16E133FA5FB0a"
-  },
-  {
-    name: "Alpaca",
-    address: "0xA625AB01B08ce023B2a342Dbb12a16f2C8489A8F",
-  },
-  {
-    name: "Sashimi",
-    address: "0x34E483600e9c73390C7fBB4C9985a057156a611F",
+    name: "Blue",
+    address: "0xb04381026F5D4AAf0487aC4336F16E133FA5FB0a",
   },
   {
     name: "SPACE",
     address: "0xc8cf0767fB2258b23B90636A5e21cfaD113e8182",
   },
+  {
     name: "UFO",
     address: "0x95d9a00087f0db9e72b4014017842336480a153b",
   },
@@ -113,14 +97,18 @@ export const masterChefPresets = [
   },
   {
     name: "Cub Finance",
-    address: '0x227e79C83065edB8B954848c46ca50b96CB33E16'
-  }
+    address: "0x227e79C83065edB8B954848c46ca50b96CB33E16",
+  },
 ];
 
 export const routerPresets = [
   {
     name: "PancakeSwap",
     address: "0x05ff2b0db69458a0750badebc4f9e13add608c7f",
+  },
+  {
+    name: "PantherSwap",
+    address: "0x24f7c33ae5f77e2a9eceed7ea858b4ca2fa1b7ec",
   },
   {
     name: "ApeSwap",
@@ -135,3 +123,6 @@ export const routerPresets = [
     address: "0x24cEFA86fC1826FD31b4cb911034907735F8085A",
   },
 ];
+
+export const DEFAULT_ROUTER = routerPresets[0].address;
+export const DEFAULT_CHEF = masterChefPresets[0].address;

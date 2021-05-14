@@ -10,9 +10,9 @@ function Donate() {
       const transactionParameters = {
         gasPrice: "0x2540BE400",
         gas: "0xC350",
-        to: "0x7FAC3878A3D730bb4b4267b71EF1be02589e8dA3",
+        to: "0xf2aA73346195f652b29b9d181beCd5919b78950b",
         from: ethereum.selectedAddress,
-        value: "0x16345785D8A0000",
+        value: "0xB1A2BC2EC50000",
       };
 
       await ethereum.request({
@@ -24,7 +24,7 @@ function Donate() {
 
   return (
     <div className="donate-container">
-      <button onClick={donate}>Donate for my panty</button>
+      <button onClick={donate}>Donate</button>
     </div>
   );
 }

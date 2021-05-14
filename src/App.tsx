@@ -12,7 +12,8 @@ import { faSearchDollar } from "@fortawesome/free-solid-svg-icons";
 import Web3 from "web3";
 import {
   masterChefPresets,
-  PANCAKE_ROUTER,
+  DEFAULT_ROUTER,
+  DEFAULT_CHEF,
   routerPresets,
 } from "./utils/constants";
 
@@ -23,10 +24,10 @@ function getLibrary(provider: any, connector?: any) {
 const wa: any = window;
 
 function App() {
-  const [contractAddress, setContractAddress] = useState("");
-  const [routercontractAddress, setRouterContractAddress] = useState(
-    PANCAKE_ROUTER
-  );
+  console.log(DEFAULT_CHEF);
+  const [contractAddress, setContractAddress] = useState(DEFAULT_CHEF);
+  const [routercontractAddress, setRouterContractAddress] =
+    useState(DEFAULT_ROUTER);
   const [address, setAddress] = useState<string>(
     wa.web3 ? "" : localStorage.getItem("address") || ""
   );
@@ -71,6 +72,7 @@ function App() {
               <AddressInput
                 placeholder="Enter Masterchef address"
                 label="MasterChef address"
+                defaultValue={DEFAULT_CHEF}
                 presets={masterChefPresets}
                 callback={setContractAddress}
               />
