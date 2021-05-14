@@ -12,6 +12,10 @@ export const masterChefPresets = [
     address: "0x058451c62b96c594ad984370eda8b6fd7197bbd4",
   },
   {
+    name: "CubDefi",
+    address: "0x227e79C83065edB8B954848c46ca50b96CB33E16",
+  },
+  {
     name: "PancakeSwap",
     address: "0x73feaa1ee314f8c655e354234017be2193c9e24e",
   },
@@ -94,10 +98,6 @@ export const masterChefPresets = [
   {
     name: "Sashimi",
     address: "0x34E483600e9c73390C7fBB4C9985a057156a611F",
-  },
-  {
-    name: "Cub Finance",
-    address: "0x227e79C83065edB8B954848c46ca50b96CB33E16",
   },
 ];
 
